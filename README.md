@@ -30,6 +30,7 @@
 - [docs/10-troubleshooting/01-common-pitfalls.md](docs/10-troubleshooting/01-common-pitfalls.md)
 - [docs/11-practice/01-guided-practice.md](docs/11-practice/01-guided-practice.md)
 - [docs/12-appendix/01-command-cheatsheet.md](docs/12-appendix/01-command-cheatsheet.md)
+- [docs/13-dashboard-practice/01-dashboard-and-daily-operations.md](docs/13-dashboard-practice/01-dashboard-and-daily-operations.md)
 
 ## 手帐图
 
@@ -39,6 +40,7 @@
 - [assets/images/hermes-harness-architecture.svg](assets/images/hermes-harness-architecture.svg)
 - [assets/images/hermes-setup-flow.svg](assets/images/hermes-setup-flow.svg)
 - [assets/images/hermes-troubleshooting-diary.svg](assets/images/hermes-troubleshooting-diary.svg)
+- [assets/images/hermes-dashboard-operation-map.svg](assets/images/hermes-dashboard-operation-map.svg)
 
 ## 自动扩展内容
 

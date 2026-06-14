@@ -45,8 +45,8 @@ curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
 
 所以这个仓库已经把安装动作包成了：
 
-- [scripts/install-hermes-local.sh](scripts/install-hermes-local.sh)
-- [scripts/verify-hermes-install.sh](scripts/verify-hermes-install.sh)
+- [scripts/install-hermes-local.sh](../../scripts/install-hermes-local.sh)
+- [scripts/verify-hermes-install.sh](../../scripts/verify-hermes-install.sh)
 
 ## 推荐你这样装
 
@@ -117,7 +117,7 @@ bash scripts/bootstrap-env.sh
 
 ### 2. 复制并填写 provider key
 
-看 [.env.example](.env.example)
+看 [.env.example](../../.env.example)
 
 ### 3. 跑安装
 
@@ -149,7 +149,7 @@ hermes setup
 
 不要硬往后走，先看：
 
-- [docs/10-troubleshooting/01-common-pitfalls.md](docs/10-troubleshooting/01-common-pitfalls.md)
+- [docs/10-troubleshooting/01-common-pitfalls.md](../../docs/10-troubleshooting/01-common-pitfalls.md)
 
 ## 安装流程图
 

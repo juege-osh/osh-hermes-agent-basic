@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1040" viewBox="0 0 1600 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Agent Dashboard 操作地图</title>
+  <desc id="desc">用手帐风格展示 Hermes Agent Dashboard 的常见页面、日常操作路径和排错闭环。</desc>
+  <defs>
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1.6" fill="#d7c4a5"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#54422f" flood-opacity="0.17"/>
+    </filter>
+    <style>
+      text{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+      .bg{fill:#fbf1dc}
+      .paper{fill:#fffaf0;stroke:#bba17a;stroke-width:3}
+      .teal{fill:#d9eee7;stroke:#74a897;stroke-width:3}
+      .blue{fill:#dfeaf7;stroke:#8ca9c4;stroke-width:3}
+      .yellow{fill:#f8e5a7;stroke:#c9a85c;stroke-width:3}
+      .pink{fill:#f6ddd8;stroke:#c99a93;stroke-width:3}
+      .green{fill:#e5edcd;stroke:#9cad6f;stroke-width:3}
+      .purple{fill:#eadff3;stroke:#b9a4c8;stroke-width:3}
+      .ink{fill:#35291f}
+      .muted{fill:#6f6255}
+      .h1{font-size:48px;font-weight:850}
+      .h2{font-size:29px;font-weight:850}
+      .body{font-size:21px;font-weight:650}
+      .small{font-size:17px;font-weight:650}
+      .tiny{font-size:15px;font-weight:650}
+      .line{stroke:#5f4a35;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      .dash{stroke:#5f4a35;stroke-width:4;stroke-linecap:round;stroke-dasharray:10 12;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="1040"/>
+  <rect width="1600" height="1040" fill="url(#dots)" opacity=".75"/>
+  <rect x="55" y="48" width="1490" height="940" rx="36" class="paper" filter="url(#shadow)"/>
+
+  <text x="100" y="125" class="h1 ink">Hermes Dashboard 新手操作地图</text>
+  <text x="102" y="171" class="body muted">先会 Chat，再会 Sessions 和 Logs，最后再碰 Config、Keys、MCP、Gateway。别急，方向盘先握稳。</text>
+
+  <g transform="translate(105 245)">
+    <rect width="300" height="650" rx="26" class="teal"/>
+    <text x="34" y="58" class="h2 ink">左侧导航</text>
+    <text x="34" y="105" class="body ink">Chat</text>
+    <text x="34" y="140" class="small muted">开始一次对话</text>
+    <text x="34" y="185" class="body ink">Sessions</text>
+    <text x="34" y="220" class="small muted">找历史、继续、导出</text>
+    <text x="34" y="265" class="body ink">Models / Config / Keys</text>
+    <text x="34" y="300" class="small muted">模型、配置、密钥</text>
+    <text x="34" y="345" class="body ink">Logs / System</text>
+    <text x="34" y="380" class="small muted">看错误、重启、更新</text>
+    <text x="34" y="425" class="body ink">Cron / Skills / MCP</text>
+    <text x="34" y="460" class="small muted">定时任务、技能、工具</text>
+    <text x="34" y="505" class="body ink">Channels / Webhooks</text>
+    <text x="34" y="540" class="small muted">接入外部消息入口</text>
+    <text x="34" y="585" class="body ink">Profiles / Pairing</text>
+    <text x="34" y="620" class="small muted">隔离身份、授权用户</text>
+  </g>
+
+  <g transform="translate(505 235)">
+    <rect width="420" height="170" rx="24" class="yellow"/>
+    <text x="36" y="58" class="h2 ink">1. 日常入口</text>
+    <text x="36" y="102" class="body muted">打开 http://127.0.0.1:9119</text>
+    <text x="36" y="136" class="body muted">从 Chat 发起任务，从 Sessions 回看历史</text>
+  </g>
+
+  <g transform="translate(1030 235)">
+    <rect width="420" height="170" rx="24" class="blue"/>
+    <text x="36" y="58" class="h2 ink">2. 验证模型</text>
+    <text x="36" y="102" class="body muted">Models 看当前模型</text>
+    <text x="36" y="136" class="body muted">CLI 跑 hermes chat -q "只回复 OK"</text>
+  </g>
+
+  <g transform="translate(505 500)">
+    <rect width="420" height="170" rx="24" class="green"/>
+    <text x="36" y="58" class="h2 ink">3. 扩展能力</text>
+    <text x="36" y="102" class="body muted">Skills 沉淀流程，MCP 接外部工具</text>
+    <text x="36" y="136" class="body muted">Cron 做定时任务，Plugins 加功能包</text>
+  </g>
+
+  <g transform="translate(1030 500)">
+    <rect width="420" height="170" rx="24" class="pink"/>
+    <text x="36" y="58" class="h2 ink">4. 出错排查</text>
+    <text x="36" y="102" class="body muted">先看 Logs，再看 Config 和 Keys</text>
+    <text x="36" y="136" class="body muted">最后用 System 重启或更新</text>
+  </g>
+
+  <g transform="translate(590 770)">
+    <rect width="720" height="96" rx="24" class="purple"/>
+    <text x="38" y="40" class="body ink">最稳的新手闭环：</text>
+    <text x="38" y="72" class="body muted">Chat 测试一句话 → Sessions 确认记录 → Logs 看错误 → Config/Keys 修配置 → 再测一次</text>
+  </g>
+
+  <path class="line" d="M405 360C455 330 470 320 505 320"/>
+  <path class="line" d="M925 320H1030"/>
+  <path class="line" d="M1240 405C1232 450 1220 470 1200 500"/>
+  <path class="line" d="M1030 585H925"/>
+  <path class="dash" d="M715 670C715 710 760 735 880 770"/>
+  <path class="dash" d="M1240 670C1235 720 1185 745 1050 770"/>
+
+  <g transform="translate(105 930)">
+    <text x="0" y="0" class="small muted">安全提醒：Dashboard 默认只绑定 127.0.0.1。不要把带 Keys 的本地面板直接暴露到公网。</text>
+  </g>
+</svg>

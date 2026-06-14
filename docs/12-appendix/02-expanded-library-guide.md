@@ -12,7 +12,7 @@ node scripts/generate-expanded-docs.js
 
 会输出到：
 
-- [generated/expanded-docs](generated/expanded-docs)
+- [generated/expanded-docs](../../generated/expanded-docs)
 
 ## 目前会生成什么
 

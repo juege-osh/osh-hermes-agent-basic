@@ -16,7 +16,9 @@
 ## 教程地图
 
 - [docs/00-START-HERE.md](docs/00-START-HERE.md)
-- [docs/01-overview/01-what-is-hermes-agent.md](docs/01-overview/01-what-is-hermes-agent.md)
+- [docs/01-overview/01-harness-and-hermes-agent.md](docs/01-overview/01-harness-and-hermes-agent.md)
+- [docs/01-overview/02-harness-agent-vs-codex.md](docs/01-overview/02-harness-agent-vs-codex.md)
+- [docs/01-overview/03-what-is-hermes-agent.md](docs/01-overview/03-what-is-hermes-agent.md)
 - [docs/02-install/01-installation-roadmap.md](docs/02-install/01-installation-roadmap.md)
 - [docs/03-config/01-provider-and-config-basics.md](docs/03-config/01-provider-and-config-basics.md)
 - [docs/04-core-concepts/01-architecture-and-core-knowledge.md](docs/04-core-concepts/01-architecture-and-core-knowledge.md)
@@ -34,6 +36,7 @@
 教程里需要“快速理解”和“情绪减压”的位置，我加了几张手帐风格图：
 
 - [assets/images/hermes-study-cover.svg](assets/images/hermes-study-cover.svg)
+- [assets/images/hermes-harness-architecture.svg](assets/images/hermes-harness-architecture.svg)
 - [assets/images/hermes-setup-flow.svg](assets/images/hermes-setup-flow.svg)
 - [assets/images/hermes-troubleshooting-diary.svg](assets/images/hermes-troubleshooting-diary.svg)
 

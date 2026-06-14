@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Agent 排错手帐</title>
+  <desc id="desc">确定性中文手帐排错图，展示按层定位 Hermes Agent 问题的流程。</desc>
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#e6d8be"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#65513d" flood-opacity="0.16"/>
+    </filter>
+    <style>
+      text{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+      .bg{fill:#fbf3df}
+      .paper{fill:#fffaf0;stroke:#bba582;stroke-width:3}
+      .ink{fill:#352c22}
+      .muted{fill:#75685a}
+      .red{fill:#f5d7d2}.yellow{fill:#f8df91}.green{fill:#dfe9c8}.blue{fill:#d9e8f5}.purple{fill:#ead9f4}
+      .h1{font-size:54px;font-weight:850}
+      .h2{font-size:30px;font-weight:850}
+      .body{font-size:23px;font-weight:650}
+      .small{font-size:19px;font-weight:650}
+      .line{stroke:#6a543e;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="900"/>
+  <rect width="1400" height="900" fill="url(#dots)"/>
+  <rect x="58" y="54" width="1284" height="792" rx="34" class="paper" filter="url(#shadow)"/>
+  <text x="105" y="125" class="h1 ink">Hermes Agent 排错手帐</text>
+  <text x="106" y="171" class="body muted">不要一上来重装，按层定位会快很多。</text>
+
+  <g transform="translate(115 240)">
+    <rect width="250" height="145" rx="18" class="red" stroke="#c89b95" stroke-width="3"/>
+    <text x="28" y="54" class="h2 ink">1 安装层</text>
+    <text x="28" y="96" class="body muted">命令找不到</text>
+    <text x="28" y="124" class="small muted">检查 PATH / uv</text>
+  </g>
+  <g transform="translate(425 240)">
+    <rect width="250" height="145" rx="18" class="yellow" stroke="#c7a55a" stroke-width="3"/>
+    <text x="28" y="54" class="h2 ink">2 模型层</text>
+    <text x="28" y="96" class="body muted">回答失败</text>
+    <text x="28" y="124" class="small muted">检查 Key / model</text>
+  </g>
+  <g transform="translate(735 240)">
+    <rect width="250" height="145" rx="18" class="green" stroke="#9fb47a" stroke-width="3"/>
+    <text x="28" y="54" class="h2 ink">3 工具层</text>
+    <text x="28" y="96" class="body muted">命令异常</text>
+    <text x="28" y="124" class="small muted">检查 backend</text>
+  </g>
+  <g transform="translate(1045 240)">
+    <rect width="250" height="145" rx="18" class="blue" stroke="#9fb8ca" stroke-width="3"/>
+    <text x="28" y="54" class="h2 ink">4 平台层</text>
+    <text x="28" y="96" class="body muted">Bot 不回</text>
+    <text x="28" y="124" class="small muted">检查 gateway</text>
+  </g>
+
+  <path class="line" d="M365 312H425M675 312H735M985 312H1045"/>
+  <path d="M420 312l-18-13v26zM730 312l-18-13v26zM1040 312l-18-13v26z" fill="#6a543e"/>
+
+  <g transform="translate(150 485)">
+    <rect width="470" height="220" rx="20" fill="#fff7e8" stroke="#bba582" stroke-width="3"/>
+    <text x="35" y="58" class="h2 ink">快速检查顺序</text>
+    <text x="35" y="105" class="body muted">1. hermes --version</text>
+    <text x="35" y="140" class="body muted">2. hermes doctor</text>
+    <text x="35" y="175" class="body muted">3. hermes model</text>
+  </g>
+
+  <g transform="translate(780 485)">
+    <rect width="470" height="220" rx="20" fill="#eef5e3" stroke="#9fb47a" stroke-width="3"/>
+    <text x="35" y="58" class="h2 ink">不要误判</text>
+    <text x="35" y="105" class="body muted">CLI 正常 ≠ Gateway 正常</text>
+    <text x="35" y="140" class="body muted">Session ≠ Memory</text>
+    <text x="35" y="175" class="body muted">安装成功 ≠ Key 已配置</text>
+  </g>
+
+  <path class="line" d="M620 594H780"/>
+  <path d="M776 594l-18-13v26z" fill="#6a543e"/>
+
+  <g transform="translate(575 735)">
+    <circle cx="0" cy="0" r="56" fill="#dfe9c8" stroke="#71925b" stroke-width="5"/>
+    <path d="M-24 1l16 17 38-43" stroke="#557a3f" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="80" y="8" class="h2 ink">先定位，再处理</text>
+  </g>
+</svg>

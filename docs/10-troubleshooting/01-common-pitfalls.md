@@ -140,4 +140,4 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 
 新手最容易在这里焦虑，我专门放一张手帐风格排错图，提醒你按层拆问题。
 
-![Hermes 排错手帐图](assets/images/hermes-troubleshooting-diary.png)
+![Hermes 排错手帐图](../../assets/images/hermes-troubleshooting-diary.svg)

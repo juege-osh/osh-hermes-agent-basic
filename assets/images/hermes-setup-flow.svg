@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1050" viewBox="0 0 1800 1050" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Agent 安装流程图</title>
+  <desc id="desc">确定性中文手帐流程图，展示 Hermes Agent 从环境检查到首次对话的七个步骤。</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#eadfcb" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#65513d" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      text{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+      .bg{fill:#fbf3df}
+      .paper{fill:#fffaf0;stroke:#bba582;stroke-width:3}
+      .ink{fill:#352c22}
+      .muted{fill:#75685a}
+      .step{fill:#fffdf7;stroke:#bba582;stroke-width:3}
+      .a{fill:#f6d7c8}.b{fill:#f7e09b}.c{fill:#dfe9c8}.d{fill:#d9e8f5}.e{fill:#ead9f4}
+      .h1{font-size:52px;font-weight:850}
+      .h2{font-size:31px;font-weight:850}
+      .body{font-size:22px;font-weight:650}
+      .code{font-size:20px;font-weight:700;font-family:"SFMono-Regular","Menlo","Consolas",monospace}
+      .line{stroke:#6a543e;stroke-width:6;stroke-linecap:round;stroke-linejoin:round;fill:none}
+    </style>
+  </defs>
+  <rect class="bg" width="1800" height="1050"/>
+  <rect width="1800" height="1050" fill="url(#grid)" opacity=".75"/>
+  <rect x="48" y="48" width="1704" height="954" rx="34" class="paper" filter="url(#shadow)"/>
+
+  <text x="95" y="126" class="h1 ink">Hermes Agent 安装流程图</text>
+  <text x="96" y="170" class="body muted">按这个顺序走：先装好，再配置，再验证。每一步都有明确检查点。</text>
+  <rect x="1210" y="88" width="360" height="58" rx="12" class="a" transform="rotate(-2 1210 88)"/>
+  <text x="1235" y="128" class="body ink">不要跳过 doctor 检查</text>
+
+  <g transform="translate(110 250)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="a"/><text x="32" y="53" class="h2 ink">1</text>
+    <text x="86" y="56" class="h2 ink">检查环境</text>
+    <text x="34" y="104" class="body muted">macOS / Linux / WSL</text>
+    <text x="34" y="136" class="code muted">curl git rg</text>
+  </g>
+  <g transform="translate(510 250)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="b"/><text x="32" y="53" class="h2 ink">2</text>
+    <text x="86" y="56" class="h2 ink">安装 uv</text>
+    <text x="34" y="104" class="body muted">准备 Python 3.11</text>
+    <text x="34" y="136" class="code muted">uv python install</text>
+  </g>
+  <g transform="translate(910 250)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="c"/><text x="32" y="53" class="h2 ink">3</text>
+    <text x="86" y="56" class="h2 ink">安装 Hermes</text>
+    <text x="34" y="104" class="body muted">官方安装脚本</text>
+    <text x="34" y="136" class="code muted">install.sh</text>
+  </g>
+  <g transform="translate(1310 250)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="d"/><text x="32" y="53" class="h2 ink">4</text>
+    <text x="86" y="56" class="h2 ink">刷新 PATH</text>
+    <text x="34" y="104" class="body muted">确认 hermes 可执行</text>
+    <text x="34" y="136" class="code muted">source ~/.zshrc</text>
+  </g>
+
+  <g transform="translate(310 615)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="e"/><text x="32" y="53" class="h2 ink">5</text>
+    <text x="86" y="56" class="h2 ink">配置 Key</text>
+    <text x="34" y="104" class="body muted">至少一个 provider</text>
+    <text x="34" y="136" class="code muted">OPENAI / NOUS</text>
+  </g>
+  <g transform="translate(755 615)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="a"/><text x="32" y="53" class="h2 ink">6</text>
+    <text x="86" y="56" class="h2 ink">运行 setup</text>
+    <text x="34" y="104" class="body muted">选择 provider / model</text>
+    <text x="34" y="136" class="code muted">hermes setup</text>
+  </g>
+  <g transform="translate(1200 615)">
+    <rect width="290" height="170" rx="18" class="step"/>
+    <circle cx="42" cy="42" r="28" class="c"/><text x="32" y="53" class="h2 ink">7</text>
+    <text x="86" y="56" class="h2 ink">验证对话</text>
+    <text x="34" y="104" class="body muted">doctor + 首条消息</text>
+    <text x="34" y="136" class="code muted">hermes doctor</text>
+  </g>
+
+  <path class="line" d="M400 335H510M800 335H910M1200 335H1310"/>
+  <path class="line" d="M1455 420C1455 525 1355 565 1345 615"/>
+  <path class="line" d="M1200 700H1045M755 700H600"/>
+  <path d="M505 335l-18-13v26zM905 335l-18-13v26zM1305 335l-18-13v26zM602 700l18-13v26zM1047 700l18-13v26z" fill="#6a543e"/>
+
+  <g transform="translate(122 825)">
+    <rect width="620" height="80" rx="18" fill="#fff7e8" stroke="#bba582" stroke-width="3"/>
+    <text x="28" y="50" class="body ink">实测坑：安装完成后当前 shell 可能还没识别 ~/.local/bin/hermes</text>
+  </g>
+  <g transform="translate(1080 825)">
+    <rect width="515" height="80" rx="18" fill="#eef5e3" stroke="#9fb47a" stroke-width="3"/>
+    <text x="28" y="50" class="body ink">通过标准：hermes doctor 能跑，模型 Key 已配置</text>
+  </g>
+</svg>

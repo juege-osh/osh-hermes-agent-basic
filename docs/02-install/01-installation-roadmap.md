@@ -153,4 +153,4 @@ hermes setup
 
 ## 安装流程图
 
-![Hermes 安装流程手帐图](assets/images/hermes-setup-flow.png)
+![Hermes 安装流程手帐图](../../assets/images/hermes-setup-flow.svg)

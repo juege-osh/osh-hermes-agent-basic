@@ -33,9 +33,9 @@
 
 教程里需要“快速理解”和“情绪减压”的位置，我加了几张手帐风格图：
 
-- [assets/images/hermes-study-cover.png](assets/images/hermes-study-cover.png)
-- [assets/images/hermes-setup-flow.png](assets/images/hermes-setup-flow.png)
-- [assets/images/hermes-troubleshooting-diary.png](assets/images/hermes-troubleshooting-diary.png)
+- [assets/images/hermes-study-cover.svg](assets/images/hermes-study-cover.svg)
+- [assets/images/hermes-setup-flow.svg](assets/images/hermes-setup-flow.svg)
+- [assets/images/hermes-troubleshooting-diary.svg](assets/images/hermes-troubleshooting-diary.svg)
 
 ## 自动扩展内容
 

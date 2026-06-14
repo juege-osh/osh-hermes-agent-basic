@@ -72,7 +72,7 @@ bash scripts/verify-hermes-install.sh
 
 ## 先看图
 
-![Hermes 学习封面](assets/images/hermes-study-cover.png)
+![Hermes 学习封面](../assets/images/hermes-study-cover.svg)
 
 ## 这套教程特别强调什么
 

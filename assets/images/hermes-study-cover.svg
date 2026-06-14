@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hermes Agent 入门学习手帐封面</title>
+  <desc id="desc">一张可控文字的手帐风封面图，展示从安装、配置、实操到部署的学习路线。</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#eadfcb" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#6f5c43" flood-opacity="0.18"/>
+    </filter>
+    <style>
+      .bg{fill:#fbf3df}
+      .ink{fill:#3d3327}
+      .muted{fill:#75685a}
+      .paper{fill:#fffaf0;stroke:#bca887;stroke-width:3}
+      .tape{fill:#e8b9a1;opacity:.75}
+      .green{fill:#dfe9c8}
+      .blue{fill:#d9e8f5}
+      .pink{fill:#f5d7d2}
+      .yellow{fill:#f8df91}
+      .line{stroke:#6b563f;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;fill:none}
+      text{font-family:"PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+      .h1{font-size:62px;font-weight:800}
+      .h2{font-size:34px;font-weight:800}
+      .body{font-size:25px;font-weight:600}
+      .small{font-size:20px;font-weight:600}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1400" height="900"/>
+  <rect width="1400" height="900" fill="url(#grid)" opacity=".75"/>
+
+  <rect x="52" y="54" width="1296" height="792" rx="36" class="paper" filter="url(#shadow)"/>
+  <path d="M52 143H1348M180 54V846" stroke="#e8dbc2" stroke-width="3"/>
+  <g stroke="#9b7e58" stroke-width="7" fill="none">
+    <circle cx="106" cy="170" r="18"/><circle cx="106" cy="260" r="18"/><circle cx="106" cy="350" r="18"/>
+    <circle cx="106" cy="440" r="18"/><circle cx="106" cy="530" r="18"/><circle cx="106" cy="620" r="18"/>
+    <circle cx="106" cy="710" r="18"/>
+  </g>
+
+  <rect x="230" y="105" width="500" height="86" rx="12" class="tape" transform="rotate(-3 230 105)"/>
+  <text x="250" y="165" class="h1 ink">Hermes Agent 入门手帐</text>
+  <text x="250" y="222" class="body muted">从零搭建、配置模型、理解工具、部署上线</text>
+
+  <g transform="translate(870 92)">
+    <rect width="310" height="120" rx="22" class="blue" stroke="#9fb8ca" stroke-width="3"/>
+    <text x="34" y="52" class="h2 ink">学习路线</text>
+    <text x="34" y="90" class="small muted">先跑通，再扩展</text>
+  </g>
+
+  <g transform="translate(242 306)">
+    <rect width="250" height="170" rx="18" class="yellow" stroke="#c7a55a" stroke-width="3"/>
+    <text x="32" y="58" class="h2 ink">1 安装</text>
+    <text x="32" y="105" class="body muted">uv / Python</text>
+    <text x="32" y="138" class="body muted">hermes doctor</text>
+  </g>
+  <g transform="translate(540 306)">
+    <rect width="250" height="170" rx="18" class="green" stroke="#a8b987" stroke-width="3"/>
+    <text x="32" y="58" class="h2 ink">2 配置</text>
+    <text x="32" y="105" class="body muted">Provider Key</text>
+    <text x="32" y="138" class="body muted">Model 选择</text>
+  </g>
+  <g transform="translate(838 306)">
+    <rect width="250" height="170" rx="18" class="pink" stroke="#caa09b" stroke-width="3"/>
+    <text x="32" y="58" class="h2 ink">3 实操</text>
+    <text x="32" y="105" class="body muted">CLI 会话</text>
+    <text x="32" y="138" class="body muted">Tools / Skills</text>
+  </g>
+
+  <g transform="translate(390 555)">
+    <rect width="500" height="170" rx="22" fill="#fff7e8" stroke="#bca887" stroke-width="3"/>
+    <text x="40" y="58" class="h2 ink">4 部署与排错</text>
+    <text x="40" y="107" class="body muted">本地 → VPS → Docker → Gateway</text>
+    <text x="40" y="140" class="body muted">按层定位：安装 / 模型 / 工具 / 平台</text>
+  </g>
+
+  <path class="line" d="M492 391H540M790 391H838M963 476C930 520 907 538 860 566"/>
+  <path class="line" d="M516 654H390C330 654 302 612 320 568"/>
+  <path d="M1195 610l50 22-50 22 10-22z" fill="#6b563f"/>
+  <path class="line" d="M1088 394C1190 416 1248 482 1245 630"/>
+
+  <g transform="translate(1045 690)">
+    <circle cx="0" cy="0" r="58" fill="#dfe9c8" stroke="#89a066" stroke-width="5"/>
+    <path d="M-25 0l17 18 37-43" stroke="#5d7d3e" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g opacity=".85">
+    <rect x="1065" y="250" width="180" height="44" rx="8" class="tape" transform="rotate(7 1065 250)"/>
+    <rect x="218" y="742" width="210" height="44" rx="8" fill="#d6c0e8" opacity=".75" transform="rotate(-5 218 742)"/>
+    <path d="M1188 206c24-33 77-15 75 27-2 44-55 58-76 21-17 27-58 15-61-17-3-34 39-54 62-31z" fill="#fff" stroke="#c7a55a" stroke-width="4"/>
+  </g>
+</svg>
